@@ -27,7 +27,7 @@ if __name__ == '__main__':
             for i, (sketch_batch, original_batch) in enumerate(test_dataset):
                 generated_images = generator(sketch_batch, training=False)
 
-                os.makedirs(os.path.join(TESTING_GENERATED_IMAGES_PATH, "generated"), exist_ok=True)
+                os.makedirs(os.path.join(TESTING_GENERATED_IMAGES_PATH), exist_ok=True)
 
                 generated_image = generated_images[0]
 
@@ -35,7 +35,7 @@ if __name__ == '__main__':
                 generated_image = generated_image.numpy()
 
                 image_filename = f"generated_epoch_{epoch + 1}_image_{i}_0.png"
-                image_path = os.path.join(TESTING_GENERATED_IMAGES_PATH, "generated", image_filename)
+                image_path = os.path.join(TESTING_GENERATED_IMAGES_PATH, image_filename)
 
                 plt.imshow(generated_image)
                 plt.axis('off')
