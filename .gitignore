@@ -1,4 +1,12 @@
-/datasets
+# Ignore everything in dataset folder except .gitkeep
+dataset/*
+!dataset/.gitkeep
+!dataset/**/.gitkeep
+
+# Ignore everything in output folder except .gitkeep  
+output/*
+!output/.gitkeep
+!output/**/.gitkeep
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
