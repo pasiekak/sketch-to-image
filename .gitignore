@@ -130,22 +130,23 @@ dmypy.json
 .pyre/
 
 # Machine Learning specific
-# Models and checkpoints
-models/
+# Models and checkpoints - ignore contents but allow README
+models/*
 !models/README.md
 *.h5
 *.pkl
 *.joblib
 checkpoints/
 
-# Dataset directories (comment out specific ones you want to track)
-dataset/
+# Dataset directories - ignore contents but allow README
+dataset/*
 !dataset/README.md
 data/
 datasets/
 
-# Test images folder
-test/
+# Test images folder - ignore contents but allow README
+test/*
+!test/README.md
 
 # Logs and tensorboard
 logs/
